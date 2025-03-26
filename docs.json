@@ -9,14 +9,32 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "groups": [
+    "languages": [
       {
-        "group": "Welcome",
-        "pages": ["Welcome/Introduction"]
+        "language": "en",
+        "groups": [
+          {
+            "group": "Welcome",
+            "pages": ["Welcome/Introduction_en"]
+          },
+          {
+            "group": "Requirements",
+            "pages": ["Requirements/Requirements_en"]
+          }
+        ]
       },
       {
-        "group": "Requirements",
-        "pages": ["Requirements/Requirements"]
+        "language": "ru",
+        "groups": [
+          {
+            "group": "Welcome",
+            "pages": ["Welcome/Introduction_ru"]
+          },
+          {
+            "group": "Requirements",
+            "pages": ["Requirements/Introduction_en"]
+          }
+        ]
       }
     ]
   }
