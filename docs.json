@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Elytopia Documentation",
+  "name": "Elytopia Games",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -12,18 +12,11 @@
     "groups": [
       {
         "group": "Welcome",
-        "pages": [
-          "Welcome",
-          {
-            "group": "Welcome",
-            "icon": "pen-paintbrush",
-            "pages": ["Welcome/Introduction", "Welcome/Introduction"]
-          }
-        ]
+        "pages": ["Welcome/Introduction"]
       },
       {
         "group": "Requirements",
-        "pages": ["Requirements/Requirements", "Requirements/Requirements"]
+        "pages": ["Requirements/Requirements"]
       }
     ]
   }
