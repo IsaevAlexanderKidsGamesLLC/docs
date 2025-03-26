@@ -27,12 +27,12 @@
         "language": "ru",
         "groups": [
           {
-            "group": "Welcome",
+            "group": "Добро пожаловать",
             "pages": ["Welcome/Introduction_ru"]
           },
           {
-            "group": "Requirements",
-            "pages": ["Requirements/Introduction_ru"]
+            "group": "Требования",
+            "pages": ["Requirements/Requirements_ru"]
           }
         ]
       }
