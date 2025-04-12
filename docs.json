@@ -7,7 +7,10 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/ely_icon.svg",
+  "favicon": {
+    "light": "/ely_icon.svg"
+    "dark": "/ely_icon.svg"
+  }",
   "logo": {
     "light": "/logo/light.svg"
     "dark": "/logo/dark.svg"
