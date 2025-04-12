@@ -12,11 +12,11 @@
     "groups": [
       {
         "group": "Добро пожаловать",
-        "pages": ["Welcome/Introduction_ru", "Requirements/Requirements_ru"]
+        "pages": ["Welcome/Introduction_ru", "FAQ/FAQ"]
       },
       {
         "group": "Требования",
-        "pages": ["Requirements/Requirements_ru"]
+        "pages": ["Requirements/general", "Requirements/tech", "Requirements/gameplay", "Requirements/ads", "Requirements/iaps", "Requirements/aso"]
       },
       {
         "group": "SDK Документация",
