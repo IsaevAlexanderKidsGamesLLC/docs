@@ -23,17 +23,6 @@
         "pages": ["SDK_Documentation/unity_documentation_ru"]
       }
     ],
-    "pages": ["FAQ/FAQ"],
-    "dropdowns": [
-    {
-      "dropdown": "SDK",
-      "icon": "book-open",
-      "pages": [
-        "SDK_Documentation/unity_documentation_ru",
-        "SDK_Documentation/unity_documentation_ru",
-        "SDK_Documentation/unity_documentation_ru"
-      ]
-    }
   ]
   }
 }
