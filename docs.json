@@ -18,6 +18,13 @@
             "group": "Требования",
             "pages": ["Requirements/Requirements_ru"]
           }
+          {
+            "group": "SDK Документация",
+            "pages": ["SDK_Documentation/unity_documentation_ru"]
+          }
+          {
+            "pages": ["SDK_Documentation/unity_documentation_ru"]
+          }
         ]
   }
 }
