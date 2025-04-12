@@ -12,7 +12,7 @@
     "groups": [
       {
         "group": "Добро пожаловать",
-        "pages": ["Welcome/Introduction_ru"]
+        "pages": ["Welcome/Introduction_ru", "Requirements/Requirements_ru"]
       },
       {
         "group": "Требования",
