@@ -9,22 +9,6 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "languages": [
-      {
-        "language": "en",
-        "groups": [
-          {
-            "group": "Welcome",
-            "pages": ["Welcome/Introduction_en"]
-          },
-          {
-            "group": "Requirements",
-            "pages": ["Requirements/Requirements_en"]
-          }
-        ]
-      },
-      {
-        "language": "ru",
         "groups": [
           {
             "group": "Добро пожаловать",
@@ -35,7 +19,5 @@
             "pages": ["Requirements/Requirements_ru"]
           }
         ]
-      }
-    ]
   }
 }
