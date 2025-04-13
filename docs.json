@@ -4,9 +4,9 @@
   "name": "Elytopia",
   
   "colors": {
-    "primary": "#9C27B0",
-    "light": "#E1BEE7",
-    "dark": "#7B1FA2"
+    "primary": "#1E88E5",
+    "light": "#64B5F6",
+    "dark": "#1565C0"
   },
   
   "navigation": {
