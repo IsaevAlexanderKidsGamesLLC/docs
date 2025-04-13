@@ -7,6 +7,7 @@
     "light": "#F5F5F5",
     "dark": "#212121"
   },
+  "favicon": "/favicon-32x32.png",
   "footer": {
     "socials": {
       "telegram": "https://play.google.com/store/apps/details?id=elytopia.world",
