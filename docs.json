@@ -9,10 +9,7 @@
   },
   "footer": {
     "socials": {
-      "website": "https://play.google.com/store/apps/details?id=elytopia.world",
       "telegram": "https://t.me/your_placeholder",
-      "instagram": "https://instagram.com/your_placeholder",
-      "discord": "https://discord.com/your_placeholder",
       "youtube": "https://youtube.com/your_placeholder"
     },
     "links": [
@@ -22,7 +19,19 @@
           {
             "label": "Google Play",
             "href": "https://play.google.com/store/apps/details?id=elytopia.world"
-          }
+          },
+          {
+            "label": "Amazon Store",
+            "href": "https://play.google.com/store/apps/details?id=elytopia.world"
+          },
+          {
+            "label": "Samsung Store",
+            "href": "https://play.google.com/store/apps/details?id=elytopia.world"
+          },
+          {
+            "label": "AppStore",
+            "href": "https://play.google.com/store/apps/details?id=elytopia.world"
+          },
         ]
       }
     ]
