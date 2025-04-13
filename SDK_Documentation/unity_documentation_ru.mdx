@@ -4,43 +4,37 @@ title: "Unity"
 
 ## Шаг 1. Скачать и импортировать SDK
 
-1. Перейдите по ссылке для скачивания пакета
+1. Перейди по ссылке для скачивания пакета
 
    <Card title="Elytopia-SDK Unity" href="https://github.com/Elytopia-Studio/ElytopiaSDK-Unity">
      
    </Card>
-2. В Unity-проекте с игрой открой меню \*\*Assets \> Import Package \> Custom Package \*\*и выбери скаченный `elytopia-sdk.unitypackage`
-3. В появившемся окне **Import Unity Package** убедись, что все необходимые файлы выбраны, и нажмите **Import**.
+2. В Unity-проекте с игрой открой меню **Assets \> Import Package \> Custom Package** и выбери скаченный `elytopia-sdk.unitypackage`
+3. В появившемся окне **Import Unity Package** убедись, что все необходимые файлы выбраны, и нажмите **Import**
 
 ---
 
-## Шаг 3. Взаимодействие с хабом через Singleton
+## Шаг 2. Показ рекламы
 
-Для коммуникации с хабом используется объект `KidsGameHubBridge.Instance`.
+<Tip>
+  Реклама запускается не при каждом показе рекламы. Система Elytopia сама определяет, когда пользователь готов к просмотру новой рекламы, поэтому не стесняйтесь указывать как можно больше вызовов рекламы
+</Tip>
 
-### Пример закрытия игры
+### Interstitial реклама
 
-```csharp
-KidsGameHubBridge.Instance.SendToHub(GameHubCommand.CloseGame);
-```
-
-Команда `GameHubCommand.CloseGame` отвечает за закрытие игры.
-
-### Пример показа рекламы (Interstitial)
+Это полноэкранная, не долгая видео-реклама
 
 ```csharp
-KidsGameHubBridge.Instance.SendToHub(GameHubCommand.ShowInterstitialAd);
 KidsGameHubBridge.Instance.ShowInterstitialAd(values);
 ```
 
-<Note>
-  Максимальную частоту показов определяет сама площадка, чаще определенного промежутка площкадка просто не показывает рекламу
-</Note>
+---
 
-**Примечания к командам:**
+## Шаг 3. Внутренние покупки
 
-- `command` — команда, которую необходимо выполнить.
-- `values` — дополнительные параметры, передаваемые вместе с командой (если требуются).
+<Info>
+  Стаенет доступно в ближайших обновлениях
+</Info>
 
 ---
 
