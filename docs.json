@@ -8,6 +8,31 @@
     "light": "#F5F5F5",
     "dark": "#212121"
   },
+
+
+  {
+    "footer": {
+      "socials": {
+        "website": "https://play.google.com/store/apps/details?id=elytopia.world",
+        "telegram": "https://t.me/your_placeholder",
+        "instagram": "https://instagram.com/your_placeholder",
+        "discord": "https://discord.com/your_placeholder",
+        "youtube": "https://youtube.com/your_placeholder"
+      },
+      "links": [
+        {
+          "header": "Площадка",
+          "items": [
+            {
+              "label": "Google Play",
+              "href": "https://play.google.com/store/apps/details?id=elytopia.world"
+            }
+          ]
+        }
+      ]
+    }
+  },
+
   
   "navigation": {
     "groups": [
