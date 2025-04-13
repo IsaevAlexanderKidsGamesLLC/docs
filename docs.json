@@ -8,8 +8,8 @@
     "dark": "#15803D"
   },
   "favicon": {
-    "light": "/ely_icon.svg",
-    "dark": "/ely_icon.svg"
+    "light": "/favicon-32x32.png",
+    "dark": "/favicon-32x32.png"
   },
   "logo": {
     "light": "/logo/light.svg",
