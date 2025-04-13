@@ -8,13 +8,14 @@
     "dark": "#15803D"
   },
   "favicon": {
-    "light": "/ely_icon.svg"
+    "light": "/ely_icon.svg",
     "dark": "/ely_icon.svg"
-  }",
+  },
   "logo": {
-    "light": "/logo/light.svg"
+    "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
-  }",
+  },
+  "content": "🚀 Banner is live! [Learn more](mintlify.com)",
   "navigation": {
     "groups": [
       {
@@ -23,7 +24,14 @@
       },
       {
         "group": "Требования",
-        "pages": ["Requirements/general", "Requirements/tech", "Requirements/gameplay", "Requirements/ads", "Requirements/iaps", "Requirements/aso"]
+        "pages": [
+          "Requirements/general",
+          "Requirements/tech",
+          "Requirements/gameplay",
+          "Requirements/ads",
+          "Requirements/iaps",
+          "Requirements/aso"
+        ]
       },
       {
         "group": "SDK Документация",
