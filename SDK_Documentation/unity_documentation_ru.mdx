@@ -5,13 +5,21 @@ title: "Unity"
 ## Шаг 1. Скачать и импортировать SDK
 
 <AccordionGroup>
-  <Accordion title="Установка через OpenUPM" icon="sparkles">
-    
-  </Accordion>
-  <Accordion title="Установка через  .unitypackage файл" icon="sparkles">
-    1. Скачать актуальный `elytopia-sdk.unitypackage` с GitHub по ссылке
+  <Accordion title="Установка через Package Manager">
+    #### Unity 2019.3 и новее
 
-       <Card title="Elytopia-SDK Unity / GitHub" horizontal href="https://github.com/Elytopia-Studio/ElytopiaSDK-Unity">
+    1. Открой Package Manager (**Window \> Package Manager**)
+    2. Нажми кнопку `+`  в верхней левой части окна, и выбери пункт `"Add package from git URL..."`
+    3. Введи следующий URL и нажми кнопку `Add` 
+
+    ```
+    https://github.com/Elytopia-Studio/ElytopiaSDK-Unity.git
+    ```
+  </Accordion>
+  <Accordion title="Установка через  .unitypackage файл">
+    1. Скачай актуальный `elytopia-sdk.unitypackage` с GitHub по ссылке
+
+       <Card title="Elytopia-SDK Unity / GitHub" horizontal="false" href="https://github.com/Elytopia-Studio/ElytopiaSDK-Unity/releases">
          
        </Card>
     2. В Unity-проекте с игрой открой меню **Assets \> Import Package \> Custom Package** и выбери скаченный `elytopia-sdk.unitypackage`
@@ -29,7 +37,9 @@ title: "Unity"
 
 ### Interstitial реклама
 
-Это не долгая, полноэкранная видео-реклама
+<Card title="Требования к показу рекламы" icon="badge-check" horizontal href="https://elytopia.kidsgames.pro/Requirements/ads">
+  
+</Card>
 
 ```csharp
 using Elytopia;
