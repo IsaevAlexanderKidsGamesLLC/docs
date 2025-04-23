@@ -36,6 +36,7 @@ title: "Unity"
 <Card title="Требования к показу рекламы" icon="badge-check" horizontal href="https://elytopia.kidsgames.pro/Requirements/ads">
   
 </Card>
+
 ### Interstitial реклама
 
 ```csharp
@@ -43,6 +44,7 @@ using Elytopia;
 
 ElytopiaSDK.Instance.ShowInterstitialAdAsync();
 ```
+
 <Note>
   Реклама запускается не при каждом показе рекламы. Система Elytopia сама определяет, когда пользователь готов к просмотру новой рекламы, поэтому не стесняйтесь указывать как можно больше вызовов рекламы
 </Note>
@@ -55,27 +57,62 @@ ElytopiaSDK.Instance.ShowInterstitialAdAsync();
   
 </Card>
 
-<Info>
-  Станут доступны в ближайших обновлениях Elytopia SDK
-</Info>
+### Совершение покупки
+
+```csharp
+using Elytopia;
+
+// Запрос на покупку
+ElytopiaSDK.Instance.PurchaseProduct("PRODUCT_ID"); 
+
+// Подписки на статус покупки
+ElytopiaSDK.Instance.PurchaseSuccessEvent += SuccessPurchased; 
+ElytopiaSDK.Instance.PurchaseFailedEvent += FailedPurchased;
+
+// Обработка успешной покупки
+void SuccessPurchased(string id)
+{
+    if (id == "PRODUCT_ID")
+        MyGame.AddMoney();
+    else if (id == "PRODUCT_ID2")
+        MyGame.AddWizzrd();
+    else if (id == "PRODUCT_ID3")
+        MyGame.AddGold();
+}
+
+// Обработка неудачной покупки
+void FailedPurchased(string id)
+{
+    // Например, можно открыть уведомление о неуспешной покупке
+}
+```
 
 ---
 
 ## Шаг 4. Размещение готовой сборки
 
-Чтобы мы могли разместить вашу игру, нужно:
+Чтобы мы могли разместить вашу игру, нужно использовать WebGL-шаблон Elytopia последней версии
 
-1. Заархивировать сборку **строго** в формате ZIP (никакие другие форматы не принимаются)
-2. Использовать стандартный шаблон WebGL от Unity
-3. Соблюдать следующую структуру архива:
+<Info>
+  Шаблон импортируется автоматически при первом импорте ElytopiaSDK. По умолчанию автоимпорт шаблона включён. Чтобы включить или отключить его вручную, перейдите в:
+
+  Tools -\> ElytopiaSDK -\> Enable/Disable Auto Install WebGL Template
+</Info>
+
+1. `Edit` -\> `Project Settings` -\> `Player` -\>` Resolution and Presentation` -\> `WebGL Template` -\> `Elytopia [version]`
+
+   <Info>
+     Если по каким-либо причинам шаблон отсутствует, вы можете установить его вручную: `Tools` -\>`ElytopiaSDK`-\> `Install WebGL Template`
+   </Info>
+2. Заархивировать сборку **строго** в формате ZIP
+3. Структура архива должна выглядеть так, без промежуточных папок
 
 ```plaintext
 webgl_game_name_build.zip
-│
 ├── Build/
 ├── index.html
-├── Другие папки и файлы
-└── TemplateData/ (эту папку можно удалить)
+├── TemplateData/
+└── ...
 ```
 
 ---
