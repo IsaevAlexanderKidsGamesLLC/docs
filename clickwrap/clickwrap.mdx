@@ -3,29 +3,4 @@ title: "Офферта"
 description: "Description of your new file."
 ---
 
-# Developer License Agreement Acceptance
-
-Please read the [Elytopia Developer License Agreement](https://elytopia.dev/developer-license) carefully before proceeding.
-
-<script>
-{`
-async function enrichTallyForm() {
-  try {
-      const ipResponse = await fetch('https://api.ipify.org?format=json');
-      const ipData = await ipResponse.json();
-      const userAgent = navigator.userAgent;
-
-      const frame = document.getElementById('tally-frame');
-      if (frame) {
-          let src = frame.getAttribute('data-tally-src');
-          src += \`&ip_address=\${encodeURIComponent(ipData.ip)}&user_agent=\${encodeURIComponent(userAgent)}\`;
-          frame.setAttribute('src', src);
-      }
-  } catch (error) {
-      console.error('Failed to enrich Tally form with IP/User-Agent:', error);
-  }
-}
-enrichTallyForm();
-`}
-
-</script>
+<iframe data-tally-src="https://tally.so/embed/wzgGN1?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="3050" frameborder="0" marginheight="0" marginwidth="0" title="Elytopia – Developer License Agreement (Public Offer)"></iframe>
