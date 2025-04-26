@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Elytopia",
+  "forceLightTheme": true,
   "colors": {
     "primary": "#000000",
     "light": "#F5F5F5",
