@@ -1,24 +1,23 @@
 ---
-title: "New file"
+title: "Офферта"
 description: "Description of your new file."
 ---
 
-
-<iframe id="tally-frame"
-  data-tally-src="https://tally.so/embed/wzgGN1?hideTitle=1&transparentBackground=1&dynamicHeight=1&ip_address=&user_agent="
-  loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Tally Form">
-</iframe>
+<iframe id="tally-frame" data-tally-src="https://tally.so/embed/wzgGN1?hideTitle=1&transparentBackground=1&dynamicHeight=1&ip_address=&user_agent=" loading="lazy" width="100%" height="500" frameBorder="0" marginHeight="0" marginWidth="0" title="Tally Form" />
 
 <script>
+{`
 async function enrichTallyForm() {
-    const ipData = await fetch('https://api.ipify.org?format=json').then(res => res.json());
-    const userAgent = navigator.userAgent;
+  const ipData = await fetch('https://api.ipify.org?format=json').then(res => res.json());
+  const userAgent = navigator.userAgent;
 
-    const frame = document.getElementById('tally-frame');
-    let src = frame.getAttribute('data-tally-src');
+  const frame = document.getElementById('tally-frame');
+  let src = frame.getAttribute('data-tally-src');
 
-    src += `&ip_address=${encodeURIComponent(ipData.ip)}&user_agent=${encodeURIComponent(userAgent)}`;
-    frame.setAttribute('src', src);
+  src += \`&ip_address=\${encodeURIComponent(ipData.ip)}&user_agent=\${encodeURIComponent(userAgent)}\`;
+  frame.setAttribute('src', src);
 }
 enrichTallyForm();
+`}
+
 </script>
