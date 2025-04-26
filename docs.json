@@ -41,7 +41,7 @@
     "groups": [
       {
         "group": "Добро пожаловать",
-        "pages": ["Welcome/Introduction_ru", "FAQ/FAQ", "clickwrap/clickwrap"]
+        "pages": ["Welcome/Introduction_ru", "FAQ/FAQ", "Welcome/new_studio_form"]
       },
       {
         "group": "Требования",
