@@ -42,7 +42,7 @@
     "groups": [
       {
         "group": "Добро пожаловать",
-        "pages": ["Welcome/Introduction_ru", "FAQ/FAQ"]
+        "pages": ["Welcome/Introduction_ru"]
       },
       {
         "group": "Требования",
@@ -60,7 +60,7 @@
       },
       {
         "group": "Платформа",
-        "pages": ["Welcome/new_studio_form"]
+        "pages": ["Welcome/new_studio_form", "Welcome/new_build_form", "FAQ/FAQ"]
       }
     ]
   }
