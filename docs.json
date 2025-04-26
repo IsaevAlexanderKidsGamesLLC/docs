@@ -63,7 +63,7 @@
       },
       {
         "group": "Платформа",
-        "pages": ["Welcome/new_studio_form", "Welcome/new_build_form", "FAQ/FAQ"]
+        "pages": ["Welcome/new_studio_form", "clickwrap/clickwrap", "Welcome/new_build_form", "FAQ/FAQ"]
       }
     ]
   }
